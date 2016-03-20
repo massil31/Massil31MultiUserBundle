@@ -1,6 +1,6 @@
 <?php
 
-namespace PUGX\MultiUserBundle\DependencyInjection;
+namespace Massil\MultiUserBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -23,7 +23,7 @@ class PUGXMultiUserExtension extends Extension
         $config = $this->processConfiguration($configuration, $configs);
                 
         $users = $config['users'];
-        $container->setParameter('pugx_user_discriminator_users', $users);
+        $container->setParameter('massil_user_discriminator_users', $users);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');

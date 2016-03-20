@@ -27,9 +27,9 @@
     "suggest": {
     },
     "autoload": {
-        "psr-0": { "PUGX\\MultiUserBundle": "" }
+        "psr-0": { "Massil\\MultiUserBundle": "" }
     },
-    "target-dir": "PUGX/MultiUserBundle",
+    "target-dir": "Massil/MultiUserBundle",
     "extra": {
         "branch-alias": {
             "dev-master": "3.0.x-dev"
