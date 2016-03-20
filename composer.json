@@ -1,5 +1,5 @@
 {
-    "name": "pugx/multi-user-bundle",
+    "name": "massil/multi-user-bundle",
     "type": "symfony-bundle",
     "description": "Symfony PUGXMultiUserBundle",
     "keywords": ["user management multi user management"],
@@ -7,8 +7,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Leonardo Proietti",
-            "email": "leonardo.proietti@gmail.com"
+            "name": "Massil Korichi",
+            "email": "korichi.massil31@gmail.com"
         },
         {
             "name": "Community",
