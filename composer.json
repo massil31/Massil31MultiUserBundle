@@ -1,7 +1,7 @@
 {
     "name": "massil/multi-user-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony PUGXMultiUserBundle",
+    "description": "Symfony MassilMultiUserBundle",
     "keywords": ["user management multi user management"],
     "homepage": "https://github.com/PUGX",
     "license": "MIT",
