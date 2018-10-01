@@ -3,7 +3,7 @@ services:
     # to discriminate users types
     massil_user.manager.user_discriminator:
         class:     Massil\MultiUserBundle\Model\UserDiscriminator
-        arguments: ["@session", %massil_user_discriminator_users%]       
+        arguments: ["@session", "%massil_user_discriminator_users%"]       
         
     #manage registration
     massil_multi_user.registration_manager:
