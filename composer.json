@@ -1,5 +1,5 @@
 {
-    "name": "massil/multi-user-bundle",
+    "name": "massil_ep/multi-user-bundle",
     "type": "symfony-bundle",
     "description": "Symfony MassilMultiUserBundle",
     "keywords": ["user management multi user management"],
@@ -7,8 +7,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Massil Korichi",
-            "email": "korichi.massil31@gmail.com"
+            "name": "Ahmed Ghiloubi",
+            "email": "ahmedghiloubi@gmail.com"
         },
         {
             "name": "Community",
@@ -19,7 +19,7 @@
         "doctrine/doctrine-bundle": "~1.2",
         "doctrine/common": "~2.2",
         "symfony/framework-bundle": "~2.7|~3.0",
-        "friendsofsymfony/user-bundle": "2.0.*@dev"
+        "friendsofsymfony/user-bundle": "^2.1.2"
     },
     "require-dev": {
         "phpunit/phpunit": "4.*"
