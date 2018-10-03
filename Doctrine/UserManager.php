@@ -7,6 +7,8 @@ use Doctrine\ORM\ORMException;
 use FOS\UserBundle\Doctrine\UserManager as BaseUserManager;
 use FOS\UserBundle\Util\CanonicalizerInterface;
 use Symfony\Component\Security\Core\Encoder\EncoderFactoryInterface;
+use FOS\UserBundle\Util\PasswordUpdater; //+
+use FOS\UserBundle\Util\CanonicalFieldsUpdater; //+
 use Massil\MultiUserBundle\Model\UserDiscriminator;
 
 /**
@@ -43,8 +45,10 @@ class UserManager extends BaseUserManager
     {
         $this->om = $om;
         $this->userDiscriminator = $userDiscriminator;
-
-        parent::__construct($encoderFactory, $usernameCanonicalizer, $emailCanonicalizer, $om, $class);
+        $passwordUpdater = new PasswordUpdater($encoderFactory); //+
+        $canonicalFieldUpdater = new CanonicalFieldsUpdater($usernameCanonicalizer, $emailCanonicalizer); //+
+        parent::__construct($passwordUpdater, $canonicalFieldUpdater, $om, $class);
+        //parent::__construct($encoderFactory, $usernameCanonicalizer, $emailCanonicalizer, $om, $class);
     }
 
     /**
